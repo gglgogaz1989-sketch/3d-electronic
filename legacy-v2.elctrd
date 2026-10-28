@@ -1,0 +1,57 @@
+{
+  "format": "electric3d",
+  "version": 2,
+  "name": "Лампочка и выключатель",
+  "parts": [
+    {
+      "id": "59acbc6a1ddb",
+      "kind": "battery",
+      "x": -3,
+      "y": 0,
+      "value": 9.0,
+      "closed": false,
+      "blown": false,
+      "angle": 0
+    },
+    {
+      "id": "9567eba3b296",
+      "kind": "bulb",
+      "x": 0,
+      "y": 0,
+      "value": 60.0,
+      "closed": false,
+      "blown": false,
+      "angle": 0
+    },
+    {
+      "id": "b52e446172a0",
+      "kind": "switch",
+      "x": 2.5,
+      "y": 2,
+      "value": 0.0,
+      "closed": true,
+      "blown": false,
+      "angle": 0
+    }
+  ],
+  "wires": [
+    {
+      "start_id": "59acbc6a1ddb",
+      "start_port": "B",
+      "end_id": "9567eba3b296",
+      "end_port": "A"
+    },
+    {
+      "start_id": "9567eba3b296",
+      "start_port": "B",
+      "end_id": "b52e446172a0",
+      "end_port": "A"
+    },
+    {
+      "start_id": "b52e446172a0",
+      "start_port": "B",
+      "end_id": "59acbc6a1ddb",
+      "end_port": "A"
+    }
+  ]
+}
